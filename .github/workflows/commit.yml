@@ -23,8 +23,8 @@ jobs:
         run: npm run commit
       - name: Commit files
         run: |
-          git config --local user.name "${{ secrets.GITHUB_USER_NAME }}"
-          git config --local user.email "${{ secrets.GITHUB_USER_EMAIL }}"
+          git config --local user.name "${{ secrets.USER_NAME }}"
+          git config --local user.email "${{ secrets.USER_EMAIL }}"
           git add history.log
           git commit -m "Protected Grass"
       - name: Push changes
