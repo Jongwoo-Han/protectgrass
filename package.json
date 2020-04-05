@@ -24,7 +24,8 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.28"
+    "moment-timezone": "^0.5.28",
+    "prettier": "^2.0.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
