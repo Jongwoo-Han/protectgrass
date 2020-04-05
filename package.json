@@ -4,6 +4,7 @@
   "description": "Protect the grass on GitHub using GitHub Actions",
   "main": "index.js",
   "scripts": {
+    "commit": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
