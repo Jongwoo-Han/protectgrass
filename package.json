@@ -22,6 +22,7 @@
   "homepage": "https://github.com/jongwooo/protectgrass#readme",
   "dependencies": {
     "fs": "0.0.1-security",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28"
   }
 }
