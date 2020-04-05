@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "commit": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --check  \"**/*.{md,js}\"",
+    "lint": "eslint .",
+    "prettier": "prettier --write  \"**/*.{md,js}\""
   },
   "repository": {
     "type": "git",
