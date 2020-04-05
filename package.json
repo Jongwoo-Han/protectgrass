@@ -1,0 +1,23 @@
+{
+  "name": "protectgrass",
+  "version": "1.0.0",
+  "description": "Protect the grass on GitHub using GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongwooo/protectgrass.git"
+  },
+  "keywords": [
+    "contributions",
+    "commit"
+  ],
+  "author": "@jongwooo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jongwooo/protectgrass/issues"
+  },
+  "homepage": "https://github.com/jongwooo/protectgrass#readme"
+}
