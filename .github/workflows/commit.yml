@@ -5,7 +5,7 @@ name: Protect Grass
 
 on:
   schedule:
-    - cron: "40 16 * * *"
+    - cron: "45 16 * * *"
 
 jobs:
   run:
