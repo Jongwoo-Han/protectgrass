@@ -16,9 +16,9 @@ moment.locale("ko", {
 	weekdaysShort: ["일", "월", "화", "수", "목", "금", "토"],
 });
 
-const date = `${moment().format("YYYY. MM. DD. (ddd) hh:mm:ss")} KST`;
+const date = `${moment().format("YYYY. MM. DD. (ddd) hh:mm:ss")} KST\n`;
 
-fs.writeFile("history.log", date, "utf8", function (error) {
+fs.appendFile("history.log", date, "utf8", function (error) {
 	if (error) throw error;
 	console.log(`Commit log: ${date}`);
 });
