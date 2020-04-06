@@ -2,7 +2,7 @@ name: Protect Grass
 
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: "30 15 * * *"
 
 jobs:
   run:
