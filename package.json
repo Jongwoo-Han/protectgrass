@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "commit": "node index.js",
-    "format": "prettier --check  \"**/*.{md,js}\"",
+    "format": "prettier --check  \"**/*.{md,js,yml}\"",
     "lint": "eslint .",
-    "prettier": "prettier --write  \"**/*.{md,js}\""
+    "prettier": "prettier --write  \"**/*.{md,js,yml}\""
   },
   "repository": {
     "type": "git",
