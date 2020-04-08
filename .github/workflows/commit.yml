@@ -2,13 +2,17 @@ name: Protect Grass
 
 on:
   schedule:
-    - cron: "30 0 * * *"
+    - cron: "30 15 * * *"
 
 jobs:
   run:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup timezone
+        uses: zcong1993/setup-timezone@v1.0
+        with:
+          timezone: Asia/Seoul
       - uses: actions/checkout@v2
       - name: Set up Node.js 12.x
         uses: actions/setup-node@v1
