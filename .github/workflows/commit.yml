@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup timezone
+      - name: Set up timezone
         uses: zcong1993/setup-timezone@v1.0
         with:
           timezone: Asia/Seoul
