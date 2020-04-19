@@ -22,6 +22,24 @@
   </a>
 </p>
 
+## 🚀 Quick start
+
+1.  **Fork this repository to yours**
+
+    ```shell
+    $ git clone [YOUR_REPOSITORY_URL]
+    $ cd protectgrass
+    ```
+
+2.  **Add your GitHub username and email to the Secrets**
+
+    You just add your GitHub username and email to the [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
+
+    | Name       | Value             |
+    | ---------- | ----------------- |
+    | USER_NAME  | [YOUR_USER_NAME]  |
+    | USER_EMAIL | [YOUR_USER_EMAIL] |
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a protectgrass project.
