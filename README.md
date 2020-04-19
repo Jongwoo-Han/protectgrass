@@ -35,8 +35,8 @@ A quick look at the top-level files and directories you'll see in a protectgrass
     ├── .prettierrc.js
     ├── LICENSE
     ├── README.md
-    ├── history.log
     ├── commit.js
+    ├── history.log
     ├── package-lock.json
     └── package.json
 
@@ -56,9 +56,9 @@ A quick look at the top-level files and directories you'll see in a protectgrass
 
 8.  **`README.md`**: A text file containing useful reference information about your project.
 
-9.  **`history.log`**: This log file contains the commit timestamp.
+9.  **`commit.js`**: This file modifies the `history.log` file when it runs.
 
-10. **`commit.js`**: This file modifies the `history.log` file when it runs.
+10. **`history.log`**: This log file contains the commit timestamp.
 
 11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
