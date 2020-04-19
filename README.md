@@ -35,10 +35,10 @@
 
     You just add your GitHub username and email to the [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
 
-    | Name       | Value             |
-    | ---------- | ----------------- |
-    | USER_NAME  | [YOUR_USER_NAME]  |
-    | USER_EMAIL | [YOUR_USER_EMAIL] |
+    | Name         | Value             |
+    | ------------ | ----------------- |
+    | `USER_NAME`  | [YOUR_USER_NAME]  |
+    | `USER_EMAIL` | [YOUR_USER_EMAIL] |
 
 ## 🧐 What's inside?
 
