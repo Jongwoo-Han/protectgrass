@@ -36,7 +36,7 @@ A quick look at the top-level files and directories you'll see in a protectgrass
     ├── LICENSE
     ├── README.md
     ├── history.log
-    ├── index.js
+    ├── commit.js
     ├── package-lock.json
     └── package.json
 
@@ -58,7 +58,7 @@ A quick look at the top-level files and directories you'll see in a protectgrass
 
 9.  **`history.log`**: This log file contains the commit timestamp.
 
-10. **`index.js`**: This file modifies the `history.log` file when it runs.
+10. **`commit.js`**: This file modifies the `history.log` file when it runs.
 
 11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
