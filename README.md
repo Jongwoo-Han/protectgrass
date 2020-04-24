@@ -26,11 +26,6 @@
 
 1.  **Fork this repository to yours**
 
-    ```shell
-    $ git clone [YOUR_REPOSITORY_URL]
-    $ cd protectgrass
-    ```
-
 2.  **Add your GitHub username and email to the Secrets**
 
     You just add your GitHub username and email to the [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
@@ -39,6 +34,8 @@
     | ------------ | ----------------- |
     | `USER_NAME`  | [YOUR_USER_NAME]  |
     | `USER_EMAIL` | [YOUR_USER_EMAIL] |
+
+    <img alt="Add a new secret" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/examples.png" width="50%">
 
 ## 🧐 What's inside?
 
