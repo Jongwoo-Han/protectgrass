@@ -28,7 +28,7 @@
 
 2.  **Add your GitHub username and email to the Secrets**
 
-    You just add your GitHub username and email to the [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
+    You just add the GitHub user name and email to [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) in this Repository Settings. Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
 
     | name         | value             |
     | ------------ | ----------------- |
