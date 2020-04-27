@@ -17,6 +17,9 @@
   <a href="LICENSE">
     <img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/protectgrass?color=blue">
   </a>
+  <a href="https://github.com/jongwooo/protectgrass/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jongwooo/protectgrass">
+  </a>
   <a href="https://github.com/jongwooo/protectgrass/actions?query=workflow%3A%22Protect+Grass%22">
     <img alt="GitHub Workflow Status" src="https://github.com/jongwooo/protectgrass/workflows/Protect%20Grass/badge.svg">
   </a>
@@ -28,13 +31,14 @@
 
 2.  **Create a Personal access token**
 
-    In `Account Settings / Developer Settings / Personal Access Token`, you can generate a [Personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) for GitHub Actions. You can check the `repo` and `workflow` in the **Select scope**.
+    In [`Account Settings / Developer Settings / Personal Access Token`](https://github.com/settings/tokens), you can generate a [Personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) for GitHub Actions.
+    Check the `repo` and `workflow` in the **Select scope**.
 
     <img alt="Select scope" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/scope.png" width="50%">
 
 3.  **Add your GitHub username and email to the Secrets**
 
-    You just add the GitHub user name and email to [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) in `Repository / Settings / Secrets`. Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
+    You just add the GitHub `user name` and `certified email` to [Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) in `Repository / Settings / Secrets`. Secrets are encrypted environment variables that you create in a repository for use with GitHub Actions.
 
     | name         | value             |
     | ------------ | ----------------- |
@@ -42,6 +46,32 @@
     | `USER_EMAIL` | [YOUR_USER_EMAIL] |
 
     <img alt="Add a new secret" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/secrets.png" width="50%">
+
+4.  **Set the operating time**
+
+    You can schedule a workflow to run at specific UTC times using [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07).
+    Scheduled workflows run on the latest commit on the default or base branch. For more information about schedule, see [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule).
+
+    ```yaml
+    # .github/workflows/commit.yml
+    name: Protect Grass
+
+    on:
+      schedule:
+        - cron: "30 15 * * *" # 00:30 KST / 15:30 UTC
+
+    jobs:
+      run:
+        runs-on: ubuntu-latest # operating environment
+
+        steps:
+          - name: Set up timezone
+            uses: zcong1993/setup-timezone@v1.0
+            with:
+              timezone: Asia/Seoul # [YOUR_TIMEZONE]
+    ```
+
+    Finally, The time of the operating environment should also be set. You can set it to your timezone through [setup-timezone](https://github.com/zcong1993/setup-timezone).
 
 ## 🧐 What's inside?
 
@@ -61,7 +91,7 @@ A quick look at the top-level files and directories you'll see in a protectgrass
     ├── package-lock.json
     └── package.json
 
-1.  **`/.github/workflows`**: This directory contains settings about Github Actions.
+1.  **`/.github/workflows`**: This directory contains settings about [Github Actions](https://github.com/features/actions).
 
 2.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
