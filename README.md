@@ -34,7 +34,7 @@
     In [`Account Settings / Developer Settings / Personal Access Token`](https://github.com/settings/tokens), you can generate a [Personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) for GitHub Actions.
     Check the `repo` and `workflow` in the **Select scope**.
 
-    <img alt="Select scope" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/scope.png" width="50%">
+    <img alt="Select scope" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/scope.png">
 
 3.  **Add your GitHub username and email to the Secrets**
 
@@ -45,7 +45,7 @@
     | `USER_NAME`  | [YOUR_USER_NAME]  |
     | `USER_EMAIL` | [YOUR_USER_EMAIL] |
 
-    <img alt="Add a new secret" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/secrets.png" width="50%">
+    <img alt="Add a new secret" src="https://protectgrass-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/secrets.png">
 
 4.  **Set the operating time**
 
