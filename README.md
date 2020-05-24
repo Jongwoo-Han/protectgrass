@@ -58,7 +58,7 @@
 
     on:
       schedule:
-        - cron: "30 15 * * *" # 00:30 KST / 15:30 UTC
+    +   - cron: "30 15 * * *" # 00:30 KST / 15:30 UTC
 
     jobs:
       run:
@@ -68,7 +68,7 @@
           - name: Set up timezone
             uses: zcong1993/setup-timezone@v1.0
             with:
-              timezone: Asia/Seoul # [YOUR_TIMEZONE]
+    +         timezone: Asia/Seoul # [YOUR_TIMEZONE]
     ```
 
     Finally, The time of the operating environment should also be set. You can set it to your timezone through [setup-timezone](https://github.com/zcong1993/setup-timezone).
