@@ -52,7 +52,7 @@
     You can schedule a workflow to run at specific UTC times using [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07).
     Scheduled workflows run on the latest commit on the default or base branch. For more information about schedule, see [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule).
 
-    ```yaml
+    ```diff
     # .github/workflows/commit.yml
     name: Protect Grass
 
